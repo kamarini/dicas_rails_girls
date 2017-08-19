@@ -1,0 +1,8 @@
+<section id="post_comments">
+  <% @post.comments.each do |comment| %>
+    <div class="comment">
+      <p><%= comment.content %></p>
+      <p><%= comment.author %></p>
+    </div>
+  <% end %>
+</section>
